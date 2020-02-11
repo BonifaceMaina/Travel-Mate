@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node index.js",
+    "test": "mocha  --require @babel/register tests/ --coverage",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Boniface",
   "license": "ISC",
