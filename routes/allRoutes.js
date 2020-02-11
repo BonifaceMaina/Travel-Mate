@@ -6,7 +6,7 @@ import bookings from './booking';
 const route = express.Router();
 
 
-route.use('/bookings', bookings);
+route.use('/trips', bookings);
 route.use('/auth', auth);
 
 

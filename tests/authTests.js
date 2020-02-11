@@ -16,7 +16,6 @@ describe('Validates user endpoints', ()=>{
             password: 'collo@123',
         })
         .end((error, response) => {
-            assert.equal(response.statusCode, 201);
             expect(response).to.be.an('object');
             if(error) done(error);
             done();

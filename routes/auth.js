@@ -26,7 +26,7 @@ router.post('/signup', async (req, res) => {
             password: hashedPassword
         });
         await user.save();
-        res.send(user);
+        return res.status(201).send(user);
     }
 });
 
