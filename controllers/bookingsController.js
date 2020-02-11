@@ -31,6 +31,7 @@ class BookingsController{
           departure: req.body.departure,
           arrival:req.body.arrival,
           tickets: req.body.tickets,
+          date:req.body.date,
           price: 1400*req.body.tickets,
           time:req.body.time
         });

@@ -6,6 +6,7 @@ const Trip = mongoose.model('Trip', new mongoose.Schema({
     departure: {type:String, required:true},
     arrival:{type:String, required:true},
     tickets: {type:Number, required:true},
+    date:{type:String, required:true},
     price: {type:Number},
     time:{type:String, required:true},
     createdAt:{
@@ -18,6 +19,7 @@ function validateTrip(trip) {
     const schema = {
         departure: Joi.string().min(5).max(255).required(),
         arrival: Joi.string().min(5).max(255).required(),
+        date: Joi.string().required(),
         tickets: Joi.number().min(1).required(),
         time: Joi.string().min(5).max(255).required()
 

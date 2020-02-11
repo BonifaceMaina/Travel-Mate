@@ -8,6 +8,9 @@ mongoose.connect('mongodb://localhost/travelmate')
 
 
 const app = express();
+app.set('view engine', 'pug');
+app.use(express.static(__dirname + '/static'));
+
 app.use(express.json());
 app.use('/', routes);
 const port = process.env.PORT || 5000;

@@ -5,7 +5,7 @@ import userAuthenticated from '../middleware/userAuthenticated';
 const router = express.Router();
 
 router.get('/availableTrips', bookingsController.allTrips);
-router.get('/:tripId', userAuthenticated,  bookingsController.viewOneTrip);
+router.get('/:tripId',  bookingsController.viewOneTrip);
 router.post('/:tripId/book', userAuthenticated, bookingsController.bookTrip);
 
 module.exports = router;

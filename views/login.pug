@@ -1,0 +1,934 @@
+doctype html
+head
+  title Travel Mate - Login
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet')
+  link(rel='stylesheet' href='css/font-awesome.css')
+  link(rel='stylesheet' href='css/lineicons.css')
+  link(rel='stylesheet' href='css/weather-icons.css')
+  link(rel='stylesheet' href='css/bootstrap.css')
+  link(rel='stylesheet' href='css/styles.css')
+nav#main-nav.navbar.navbar-default.navbar-inverse.navbar-theme
+  .container
+    .navbar-inner.nav
+      .navbar-header
+        button.navbar-toggle.collapsed(data-target='#navbar-main' data-toggle='collapse' type='button' area-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='index.html')
+          img(src='img/logo.png' alt='Image Alternative text' title='Image Title')
+      #navbar-main.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.active.dropdown
+            a.dropdown-toggle(href='index.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Pages
+            .dropdown-menu.dropdown-menu-lg
+              .row
+                .col-md-4
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='index.html') Index 1
+                    li
+                      a(href='index-2.html') Index 2
+                    li
+                      a(href='index-3.html') Index 3
+                    li
+                      a(href='index-4.html') Index 4
+                    li
+                      a(href='index-5.html') Index 5
+                    li
+                      a(href='index-6.html') Index 6
+                    li
+                      a(href='index-7.html') Index 7
+                    li
+                      a(href='index-8.html') Index 8
+                    li
+                      a(href='index-9.html') Index 9
+                    li
+                      a(href='index-10.html') Index 10
+                .col-md-4
+                  h5.dropdown-meganav-list-title Misc
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='blog.html') Blog
+                    li
+                      a(href='blog-post.html') Blog Post
+                    li
+                      a(href='404.html') 404
+                    li
+                      a(href='about-us.html') About Us
+                    li
+                      a(href='contact.html') Contact
+                    li
+                      a(href='login.html') Login
+                    li
+                      a(href='login-2.html') Login 2
+                    li
+                      a(href='register.html') Register
+                    li
+                      a(href='pwd-reset.html') Reset password
+                    li
+                      a(href='payment-success.html') Sucess Payment
+                    li
+                      a(href='coming-soon.html') Coming Soon
+                    li
+                      a(href='loading.html') Loading
+                .col-md-4
+                  h5.dropdown-meganav-list-title Country/City
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='index-city-1.html') Index City 1
+                    li
+                      a(href='index-city-2.html') Index City 2
+                    li
+                      a(href='index-city-3.html') Index City 3
+                    li
+                      a(href='index-country-1.html') Index Country 1
+                    li
+                      a(href='index-country-2.html') Index Country 2
+                    li
+                      a(href='index-country-3.html') Index Country 3
+          li.dropdown
+            a.dropdown-toggle(href='hotel-index-1.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Hotels
+            .dropdown-menu.dropdown-menu-xl
+              .row
+                .col-md-3
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='hotel-index-1.html') Layout 1
+                    li
+                      a(href='hotel-index-2.html') Layout 2
+                    li
+                      a(href='hotel-index-3.html') Layout 3
+                    li
+                      a(href='hotel-index-4.html') Layout 4
+                .col-md-3
+                  h5.dropdown-meganav-list-title Search Results
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='hotel-results-1.html') Layout 1
+                    li
+                      a(href='hotel-results-2.html') Layout 2
+                    li
+                      a(href='hotel-results-3.html') Layout 3
+                    li
+                      a(href='hotel-results-4.html') Layout 4
+                    li
+                      a(href='hotel-results-5.html') Layout 5
+                    li
+                      a(href='hotel-results-6.html') Layout 6
+                .col-md-3
+                  h5.dropdown-meganav-list-title Hotel Pages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='hotel-page-1.html') Layout 1
+                    li
+                      a(href='hotel-page-2.html') Layout 2
+                    li
+                      a(href='hotel-page-3.html') Layout 3
+                    li
+                      a(href='hotel-page-4.html') Layout 4
+                    li
+                      a(href='hotel-page-5.html') Layout 5
+                .col-md-3
+                  h5.dropdown-meganav-list-title Payment
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='hotel-payment-1.html') Layout 1
+                    li
+                      a(href='hotel-payment-2.html') Layout 2
+          li.dropdown
+            a.dropdown-toggle(href='room-index-1.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Rooms
+            .dropdown-menu.dropdown-menu-xl
+              .row
+                .col-md-3
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='room-index-1.html') Layout 1
+                    li
+                      a(href='room-index-2.html') Layout 2
+                    li
+                      a(href='room-index-3.html') Layout 3
+                .col-md-3
+                  h5.dropdown-meganav-list-title Search Results
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='room-results-1.html') Layout 1
+                    li
+                      a(href='room-results-2.html') Layout 2
+                    li
+                      a(href='room-results-3.html') Layout 3
+                    li
+                      a(href='room-results-4.html') Layout 4
+                    li
+                      a(href='room-results-5.html') Layout 5
+                    li
+                      a(href='room-results-6.html') Layout 6
+                .col-md-3
+                  h5.dropdown-meganav-list-title Room Pages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='room-page-1.html') Layout 1
+                    li
+                      a(href='room-page-2.html') Layout 2
+                    li
+                      a(href='room-page-3.html') Layout 3
+                    li
+                      a(href='room-page-4.html') Layout 4
+                    li
+                      a(href='room-page-5.html') Layout 5
+                .col-md-3
+                  h5.dropdown-meganav-list-title Payment
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='room-payment-1.html') Layout 1
+                    li
+                      a(href='room-payment-2.html') Layout 2
+          li.dropdown
+            a.dropdown-toggle(href='flight-index-1.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Flights
+            .dropdown-menu.dropdown-menu-lg
+              .row
+                .col-md-4
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='flight-index-1.html') Layout 1
+                    li
+                      a(href='flight-index-2.html') Layout 2
+                    li
+                      a(href='flight-index-3.html') Layout 3
+                .col-md-4
+                  h5.dropdown-meganav-list-title Search Results
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='flight-results-1.html') Layout 1
+                    li
+                      a(href='flight-results-2.html') Layout 2
+                    li
+                      a(href='flight-results-3.html') Layout 3
+                .col-md-4
+                  h5.dropdown-meganav-list-title Payment
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='flight-payment-1.html') Layout 1
+                    li
+                      a(href='flight-payment-2.html') Layout 2
+          li.dropdown
+            a.dropdown-toggle(href='car-index-1.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Cars
+            .dropdown-menu.dropdown-menu-lg
+              .row
+                .col-md-4
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='car-index-1.html') Layout 1
+                    li
+                      a(href='car-index-2.html') Layout 2
+                    li
+                      a(href='car-index-3.html') Layout 3
+                .col-md-4
+                  h5.dropdown-meganav-list-title Search Results
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='car-results-1.html') Layout 1
+                    li
+                      a(href='car-results-2.html') Layout 2
+                    li
+                      a(href='car-results-3.html') Layout 3
+                    li
+                      a(href='car-results-4.html') Layout 4
+                    li
+                      a(href='car-results-5.html') Layout 5
+                .col-md-4
+                  h5.dropdown-meganav-list-title Payment
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='car-payment-1.html') Layout 1
+                    li
+                      a(href='car-payment-2.html') Layout 2
+          li.dropdown
+            a.dropdown-toggle(href='exp-index-1.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Experiences
+            .dropdown-menu.dropdown-menu-xl
+              .row
+                .col-md-3
+                  h5.dropdown-meganav-list-title Homepages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='exp-index-1.html') Layout 1
+                    li
+                      a(href='exp-index-2.html') Layout 2
+                    li
+                      a(href='exp-index-3.html') Layout 3
+                .col-md-3
+                  h5.dropdown-meganav-list-title Search Results
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='exp-results-1.html') Layout 1
+                    li
+                      a(href='exp-results-2.html') Layout 2
+                    li
+                      a(href='exp-results-3.html') Layout 3
+                    li
+                      a(href='exp-results-4.html') Layout 4
+                    li
+                      a(href='exp-results-5.html') Layout 5
+                    li
+                      a(href='exp-results-6.html') Layout 6
+                .col-md-3
+                  h5.dropdown-meganav-list-title Event Pages
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='exp-page-1.html') Layout 1
+                    li
+                      a(href='exp-page-2.html') Layout 2
+                    li
+                      a(href='exp-page-3.html') Layout 3
+                    li
+                      a(href='exp-page-4.html') Layout 4
+                    li
+                      a(href='exp-page-5.html') Layout 5
+                .col-md-3
+                  h5.dropdown-meganav-list-title Payment
+                  ul.dropdown-meganav-list-items
+                    li
+                      a(href='exp-payment-1.html') Layout 1
+                    li
+                      a(href='exp-payment-2.html') Layout 2
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown
+            a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+              span._desk-h Currency
+              b USD
+            .dropdown-menu.dropdown-menu-xxl
+              h5.dropdown-meganav-select-list-title Popular Currencies
+              .row(data-gutter='10')
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span &euro;
+                        | Euro
+                    li
+                      a(href='#')
+                        span &pound;
+                        | Pound sterling
+                    li.active
+                      a(href='#')
+                        span US$
+                        | U.S. dollar
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span CAD
+                        | Canadian dollar
+                    li
+                      a(href='#')
+                        span AUD
+                        | Australian dollar
+                    li
+                      a(href='#')
+                        span RUB
+                        | Russian Ruble
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span S$
+                        | Singapore dollar
+                    li
+                      a(href='#')
+                        span CNY
+                        | Chinese yuan
+                    li
+                      a(href='#')
+                        span &yen;
+                        | Japanese yen
+              hr
+              h5.dropdown-meganav-select-list-title All Currencies
+              .row(data-gutter='10')
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span AR$
+                        | Argentine peso
+                    li
+                      a(href='#')
+                        span AUD
+                        | Australian dollar
+                    li
+                      a(href='#')
+                        span AZN
+                        | Azerbaijan, New Ma...
+                    li
+                      a(href='#')
+                        span BHD
+                        | Bahrain dinar
+                    li
+                      a(href='#')
+                        span BRL
+                        | Brazilian real
+                    li
+                      a(href='#')
+                        span BGN
+                        | Bulgarian lev
+                    li
+                      a(href='#')
+                        span CAD
+                        | Canadian dollar
+                    li
+                      a(href='#')
+                        span XOF
+                        | CFA Franc BCEAO
+                    li
+                      a(href='#')
+                        span CL$
+                        | Chilean peso
+                    li
+                      a(href='#')
+                        span CNY
+                        | Chinese yuan
+                    li
+                      a(href='#')
+                        span COP
+                        | Colombian peso
+                    li
+                      a(href='#')
+                        span K&ccaron;
+                        | Czech koruna
+                    li
+                      a(href='#')
+                        span DKK
+                        | Danish krone
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span EGP
+                        | Egyptian pound
+                    li
+                      a(href='#')
+                        span &euro;
+                        | Euro
+                    li
+                      a(href='#')
+                        span FJD
+                        | Fijian dollar
+                    li
+                      a(href='#')
+                        span GEL
+                        | Georgian lari
+                    li
+                      a(href='#')
+                        span HK$
+                        | Hong Kong Dollar
+                    li
+                      a(href='#')
+                        span HUF
+                        | Hungarian forint
+                    li
+                      a(href='#')
+                        span Rs.
+                        | Indian rupee
+                    li
+                      a(href='#')
+                        span Rp
+                        | Indonesian rupiah
+                    li
+                      a(href='#')
+                        span &#x20AA;
+                        | Israeli new sheqel
+                    li
+                      a(href='#')
+                        span &yen;
+                        | Japanese yen
+                    li
+                      a(href='#')
+                        span JOD
+                        | Jordanian dinar
+                    li
+                      a(href='#')
+                        span KZT
+                        | Kazakhstani tenge
+                    li
+                      a(href='#')
+                        span KRW
+                        | Korean won
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span KWD
+                        | Kuwaiti dinar
+                    li
+                      a(href='#')
+                        span MYR
+                        | Malaysian ringgit
+                    li
+                      a(href='#')
+                        span MXN
+                        | Mexican peso
+                    li
+                      a(href='#')
+                        span MDL
+                        | Moldovan leu
+                    li
+                      a(href='#')
+                        span NAD
+                        | Namibian Dollar
+                    li
+                      a(href='#')
+                        span TWD
+                        | New Taiwan Dollar
+                    li
+                      a(href='#')
+                        span NZD
+                        | New Zealand dollar
+                    li
+                      a(href='#')
+                        span NOK
+                        | Norwegian krone
+                    li
+                      a(href='#')
+                        span OMR
+                        | Omani rial
+                    li
+                      a(href='#')
+                        span z&lstrok;
+                        | Polish zloty
+                    li
+                      a(href='#')
+                        span &pound;
+                        | Pound sterling
+                    li
+                      a(href='#')
+                        span QAR
+                        | Qatar riyal
+                    li
+                      a(href='#')
+                        span lei
+                        | Romanian new leu
+                .col-md-3
+                  ul.dropdown-meganav-select-list-currency
+                    li
+                      a(href='#')
+                        span RUB
+                        | Russian Ruble
+                    li
+                      a(href='#')
+                        span SAR
+                        | Saudi Arabian riyal
+                    li
+                      a(href='#')
+                        span S$
+                        | Singapore dollar
+                    li
+                      a(href='#')
+                        span ZAR
+                        | South African rand
+                    li
+                      a(href='#')
+                        span SEK
+                        | Swedish krona
+                    li
+                      a(href='#')
+                        span CHF
+                        | Swiss franc
+                    li
+                      a(href='#')
+                        span THB
+                        | Thai baht
+                    li
+                      a(href='#')
+                        span TL
+                        | Turkish lira
+                    li
+                      a(href='#')
+                        span AED
+                        | U.A.E. dirham
+                    li.active
+                      a(href='#')
+                        span US$
+                        | U.S. dollar
+                    li
+                      a(href='#')
+                        span UAH
+                        | Ukraine Hryvnia
+                    li
+                      a(href='#')
+                        span UZS
+                        | Uzbekistan, Sums
+          li.dropdown
+            a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+              span._desk-h Language
+              img.navbar-flag(src='img/flags/USA.png' alt='Image Alternative text' title='Image Title')
+            .dropdown-menu.dropdown-menu-xxl
+              h5.dropdown-meganav-select-list-title Languages
+              .row(data-gutter='10')
+                .col-md-3
+                  ul.dropdown-meganav-select-list-lang
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/UK.png' alt='Image Alternative text' title='Image Title')
+                        | English(UK)
+                    li.active
+                      a(href='#')
+                        img(src='img/flag_codes/US.png' alt='Image Alternative text' title='Image Title')
+                        | English(US)
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/DE.png' alt='Image Alternative text' title='Image Title')
+                        | Deutsch
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/NED.png' alt='Image Alternative text' title='Image Title')
+                        | Nederlands
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/FR.png' alt='Image Alternative text' title='Image Title')
+                        | Fran&ccedil;ais
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/SP.png' alt='Image Alternative text' title='Image Title')
+                        | Espa&ntilde;ol
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/ARG.png' alt='Image Alternative text' title='Image Title')
+                        | Espa&ntilde;ol (AR)
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/IT.png' alt='Image Alternative text' title='Image Title')
+                        | Italiano
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/PT.png' alt='Image Alternative text' title='Image Title')
+                        | Portugu&ecirc;s (PT)
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/BR.png' alt='Image Alternative text' title='Image Title')
+                        | Portugu&ecirc;s (BR)
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/NR.png' alt='Image Alternative text' title='Image Title')
+                        | Norsk
+                .col-md-3
+                  ul.dropdown-meganav-select-list-lang
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/FIN.png' alt='Image Alternative text' title='Image Title')
+                        | Suomi
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/SW.png' alt='Image Alternative text' title='Image Title')
+                        | Svenska
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/DEN.png' alt='Image Alternative text' title='Image Title')
+                        | Dansk
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/CZ.png' alt='Image Alternative text' title='Image Title')
+                        | &Ccaron;e&scaron;tina
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/HUN.png' alt='Image Alternative text' title='Image Title')
+                        | Magyar
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/ROM.png' alt='Image Alternative text' title='Image Title')
+                        | Rom&acirc;n&abreve;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/JP.png' alt='Image Alternative text' title='Image Title')
+                        | &#x65E5;&#x672C;&#x8A9E;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/CN.png' alt='Image Alternative text' title='Image Title')
+                        | &#x7B80;&#x4F53;&#x4E2D;&#x6587;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/PL.png' alt='Image Alternative text' title='Image Title')
+                        | Polski
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/GR.png' alt='Image Alternative text' title='Image Title')
+                        | &Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#x3AC;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/RU.png' alt='Image Alternative text' title='Image Title')
+                        | &Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;
+                .col-md-3
+                  ul.dropdown-meganav-select-list-lang
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/TUR.png' alt='Image Alternative text' title='Image Title')
+                        | T&uuml;rk&ccedil;e
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/BUL.png' alt='Image Alternative text' title='Image Title')
+                        | &Bcy;&hardcy;&lcy;&gcy;&acy;&rcy;&scy;&kcy;&icy;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/ARB.png' alt='Image Alternative text' title='Image Title')
+                        | &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/KOR.png' alt='Image Alternative text' title='Image Title')
+                        | &#xD55C;&#xAD6D;&#xC5B4;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/ISR.png' alt='Image Alternative text' title='Image Title')
+                        | &#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/LAT.png' alt='Image Alternative text' title='Image Title')
+                        | Latviski
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/UKR.png' alt='Image Alternative text' title='Image Title')
+                        | &Ucy;&kcy;&rcy;&acy;&yicy;&ncy;&scy;&softcy;&kcy;&acy;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/IND.png' alt='Image Alternative text' title='Image Title')
+                        | Bahasa Indonesia
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/MAL.png' alt='Image Alternative text' title='Image Title')
+                        | Bahasa Malaysia
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/TAI.png' alt='Image Alternative text' title='Image Title')
+                        | &#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/EST.png' alt='Image Alternative text' title='Image Title')
+                        | Eesti
+                .col-md-3
+                  ul.dropdown-meganav-select-list-lang
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/CRO.png' alt='Image Alternative text' title='Image Title')
+                        | Hrvatski
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/LIT.png' alt='Image Alternative text' title='Image Title')
+                        | Lietuvi&uogon;
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/SLO.png' alt='Image Alternative text' title='Image Title')
+                        | Sloven&ccaron;ina
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/SERB.png' alt='Image Alternative text' title='Image Title')
+                        | Srpski
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/SLOVE.png' alt='Image Alternative text' title='Image Title')
+                        | Sloven&scaron;&ccaron;ina
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/NAM.png' alt='Image Alternative text' title='Image Title')
+                        | Ti&#x1EBF;ng Vi&#x1EC7;t
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/PHI.png' alt='Image Alternative text' title='Image Title')
+                        | Filipino
+                    li
+                      a(href='#')
+                        img(src='img/flag_codes/ICE.png' alt='Image Alternative text' title='Image Title')
+                        | &Iacute;slenska
+          li.navbar-nav-item-user.dropdown
+            a.dropdown-toggle(href='account.html' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+              i.fa.fa-user-circle-o.navbar-nav-item-user-icon
+              | My Account
+            ul.dropdown-menu
+              li
+                a(href='account.html') Preferences
+              li
+                a(href='account-notifications.html') Notifications
+              li
+                a(href='account-cards.html') Payment Methods
+              li
+                a(href='account-travelers.html') Travelers
+              li
+                a(href='account-history.html') History
+              li
+                a(href='account-bookmarks.html') Bookmarks
+.theme-page-section.theme-page-section-xl.theme-page-section-gray
+  .container
+    .row
+      .col-md-4.col-md-offset-4
+        .theme-login
+          .theme-login-header
+            h1.theme-login-title Sign In
+            p.theme-login-subtitle Login into your Bookify account
+          .theme-login-box
+            .theme-login-box-inner
+              form.theme-login-form
+                .form-group.theme-login-form-group
+                  input.form-control(type='text' placeholder='Email Address')
+                .form-group.theme-login-form-group
+                  input.form-control(type='password' placeholder='Password')
+                  p.help-block
+                    a(href='pwd-reset.html') Forgot password?
+                .form-group
+                  .theme-login-checkbox
+                    label.icheck-label
+                      input.icheck(type='checkbox')
+                      span.icheck-title Keep me logged in
+                a.btn.btn-uc.btn-dark.btn-block.btn-lg(href='#') Sign In
+              .theme-login-social-separator
+                p or sign in with social media
+              .theme-login-social-login
+                .row(data-gutter='10')
+                  .col-xs-6
+                    a.theme-login-social-login-facebook(href='#')
+                      i.fa.fa-facebook-square
+                      span
+                        | Sign in with
+                        br
+                        b Facebook
+                  .col-xs-6
+                    a.theme-login-social-login-google(href='#')
+                      i.fa.fa-google-plus-circle
+                      span
+                        | Sign in with
+                        br
+                        b Google
+            .theme-login-box-alt
+              p
+                | Don&apos;t have an account? &nbsp;
+                a(href='register.html') Sign up.
+          p.theme-login-terms
+            | By logging in you accept our
+            a(href='#') terms of use
+            br
+            | and
+            a(href='#') privacy policy
+            | .
+#mainFooter.theme-footer
+  .container._ph-mob-0
+    .row.row-eq-height.row-mob-full(data-gutter='60')
+      .col-md-3
+        .theme-footer-section.theme-footer-
+          a.theme-footer-brand._mb-mob-30(href='#')
+            img(src='img/logo-black.png' alt='Image Alternative text' title='Image Title')
+          .theme-footer-brand-text
+            p
+              | Ac eleifend netus class vitae cubilia morbi ultricies fringilla vel consequat natoque sollicitudin a quis
+            p
+              | Pulvinar netus aliquet cubilia morbi habitant auctor et taciti mus placerat mollis integer scelerisque montes
+      .col-md-5
+        .row
+          .col-md-4
+            .theme-footer-section.theme-footer-
+              h5.theme-footer-section-title Travel Mate
+              ul.theme-footer-section-list
+                li
+                  a(href='#') About Travel Mate
+                li
+                  a(href='#') Mobile App
+                li
+                  a(href='#') Customer Support
+                li
+                  a(href='#') Advertising
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Privacy Policy
+                li
+                  a(href='#') Terms of Use
+          .col-md-4
+            .theme-footer-section.theme-footer-
+              h5.theme-footer-section-title Explore
+              ul.theme-footer-section-list
+                li
+                  a(href='#') Countries
+                li
+                  a(href='#') Regions
+                li
+                  a(href='#') Cities
+                li
+                  a(href='#') Districs
+                li
+                  a(href='#') Airports
+                li
+                  a(href='#') Hotels
+                li
+                  a(href='#') Places of Interest
+          .col-md-4
+            .theme-footer-section.theme-footer-
+              h5.theme-footer-section-title Book
+              ul.theme-footer-section-list
+                li
+                  a(href='#') Apartments
+                li
+                  a(href='#') Resorts
+                li
+                  a(href='#') Villas
+                li
+                  a(href='#') Hostels
+                li
+                  a(href='#') B&amp;Bs
+                li
+                  a(href='#') Guesthouses
+                li
+                  a(href='#') Hotel Chains
+      .col-md-4
+        .theme-footer-section.theme-footer-section-subscribe.bg-grad._mt-mob-30
+          .theme-footer-section-subscribe-bg(style='background-image:url(img/footer/footer_subscribe_bg.png);')
+          .theme-footer-section-subscribe-content
+            h5.theme-footer-section-title Save up to 50% off your next trip
+            p.text-muted Subscribe to unlock our secret deals
+            form
+              .form-group
+                input.form-control.theme-footer-subscribe-form-control(type='email' placeholder='Type your e-mail here')
+              button.btn.btn-primary-invert.btn-shadow.text-upcase.theme-footer-subscribe-btn(type='submit') Get deals
+.theme-copyright
+  .container
+    .row
+      .col-md-6
+        p.theme-copyright-text
+          | Copyright &copy; 2018
+          a(href='#') Bookify
+          | . All rights reserved.
+      .col-md-6
+        ul.theme-copyright-social
+          li
+            a.fa.fa-facebook(href='#')
+          li
+            a.fa.fa-google(href='#')
+          li
+            a.fa.fa-twitter(href='#')
+          li
+            a.fa.fa-youtube-play(href='#')
+          li
+            a.fa.fa-instagram(href='#')
+script(src='js/jquery.js')
+script(src='js/moment.js')
+script(src='js/bootstrap.js')
+script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDYeBBmgAkyAN_QKjAVOiP_kWZ_eQdadeI&callback=initMap&libraries=places')
+script(src='js/owl-carousel.js')
+script(src='js/blur-area.js')
+script(src='js/icheck.js')
+script(src='js/gmap.js')
+script(src='js/magnific-popup.js')
+script(src='js/ion-range-slider.js')
+script(src='js/sticky-kit.js')
+script(src='js/smooth-scroll.js')
+script(src='js/fotorama.js')
+script(src='js/bs-datepicker.js')
+script(src='js/typeahead.js')
+script(src='js/quantity-selector.js')
+script(src='js/countdown.js')
+script(src='js/window-scroll-action.js')
+script(src='js/fitvid.js')
+script(src='js/youtube-bg.js')
+script(src='js/custom.js')
