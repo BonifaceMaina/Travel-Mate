@@ -7,31 +7,23 @@ chai.should();
 const expect = chai.expect;
 
 // registration tests
-describe('Validates user endpoints', ()=>{
-    it('registers a new user', (done)=>{
+describe('Validates booking endpoints', ()=>{
+    it('retrieves all trips available', (done)=>{
         chai.request(app)
-        .post('/auth/signup')
-        .send({
-            email: 'collin@buupass.com', 
-            password: 'collo@123',
-        })
+        .get('/bookings/availableTrips')
         .end((error, response) => {
-            assert.equal(response.statusCode, 201);
+            assert.equal(response.statusCode, 200);
             expect(response).to.be.an('object');
             if(error) done(error);
             done();
         });
-    });    
+    });   
 
-    it('should not allow empty email', (done)=>{
+    it('retrieves one trip', (done)=>{
         chai.request(app)
-        .post('/auth/signup')
-        .send({
-            email: 'collins@buupass.com', 
-            password: 'collo@123',
-        })
+        .get('/bookings/oneTrip/2')
         .end((error, response) => {
-            assert.equal(response.statusCode, 400);
+            assert.equal(response.statusCode, 200);
             expect(response).to.be.an('object');
             if(error) done(error);
             done();

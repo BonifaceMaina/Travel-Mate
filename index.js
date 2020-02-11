@@ -1,4 +1,5 @@
 import express from 'express';
+import routes from './routes/allRoutes';
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/travelmate')
@@ -7,15 +8,8 @@ mongoose.connect('mongodb://localhost/travelmate')
 
 
 const app = express();
-const auth = require('./routes/auth');
-
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
-
 app.use(express.json());
-app.use('/auth', auth);
-
+app.use('/', routes);
 const port = process.env.PORT || 5000;
 app.listen(port, ()=> console.log(`Listening on port ${port}...`));
  
