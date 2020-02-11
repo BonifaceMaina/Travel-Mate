@@ -1,3 +1,5 @@
+import express from 'express';
+
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/travelmate')
 .then(()=>console.log('Connected to MongoDB'))
@@ -9,8 +11,7 @@ const userSchema = new mongoose.Schema({
     password: String, 
     number: Number, 
     createdAt: { type:Date, default:Date.now }
-})
-var express = require('express');
+});
 const app = express();
 const auth = require('./routes/auth');
 
@@ -20,7 +21,8 @@ app.get('/', function (req, res) {
 
 app.use(express.json());
 app.use('/auth', auth);
-// app.use('/api/v1/mentors', mentors);
-// app.use('/api/v1/sessions', sessions);
-const port = process.env.PORT || 3000;
+
+const port = process.env.PORT || 5000;
 app.listen(port, ()=> console.log(`Listening on port ${port}...`));
+ 
+export default app

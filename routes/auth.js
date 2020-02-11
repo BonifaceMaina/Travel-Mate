@@ -1,12 +1,12 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 
-router.get('/signup', (req, res) => {
+router.post('/signup', (req, res) => {
     res.send('signup');
 });
 
-router.get('/signin', (req, res) => {
+router.post('/signin', (req, res) => {
     res.send('sign in');
 });
 

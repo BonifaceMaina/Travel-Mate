@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start" : "nodemon --exec babel-node index.js",
     "test": "mocha  --require @babel/register tests/ --coverage",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Boniface",
   "license": "ISC",
   "dependencies": {
+    "@babel/register": "^7.8.3",
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "coveralls": "^3.0.9",
     "express": "^4.17.1",
@@ -19,5 +22,11 @@
     "mongoose": "^5.0.1",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
   }
 }
