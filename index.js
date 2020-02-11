@@ -5,13 +5,7 @@ mongoose.connect('mongodb://localhost/travelmate')
 .then(()=>console.log('Connected to MongoDB'))
 .catch(err => console.error('could not connect to MongoDB', err));
 
-const userSchema = new mongoose.Schema({
-    name: String, 
-    email: String, 
-    password: String, 
-    number: Number, 
-    createdAt: { type:Date, default:Date.now }
-});
+
 const app = express();
 const auth = require('./routes/auth');
 

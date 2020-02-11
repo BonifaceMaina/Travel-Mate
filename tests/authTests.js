@@ -12,32 +12,26 @@ describe('Validates user endpoints', ()=>{
         chai.request(app)
         .post('/auth/signin')
         .send({
-            name: 'Collins', 
             email: 'collins@buupass.com', 
             password: 'collo@123',
-            number: '071882455'
         })
         .end((error, response) => {
             assert.equal(response.statusCode, 201);
-            response.should.have.status(201);
             expect(response).to.be.an('object');
             if(error) done(error);
             done();
         });
     });    
 
-    it('should not allow empty first name', (done)=>{
+    it('should not allow empty email', (done)=>{
         chai.request(app)
         .post('/auth/signup')
         .send({
-            name: '', 
             email: 'collins@buupass.com', 
             password: 'collo@123',
-            number: '071882455'
         })
         .end((error, response) => {
             assert.equal(response.statusCode, 400);
-            response.should.have.status(201);
             expect(response).to.be.an('object');
             if(error) done(error);
             done();
