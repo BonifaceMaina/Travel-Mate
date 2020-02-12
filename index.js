@@ -2,7 +2,7 @@ import express from 'express';
 import routes from './routes/allRoutes';
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/travelmate')
+mongoose.connect('mongodb://127.0.0.1/travelmate')
 .then(()=>console.log('Connected to MongoDB'))
 .catch(err => console.error('could not connect to MongoDB', err));
 
