@@ -26,7 +26,7 @@ describe('Validates user endpoints', ()=>{
         chai.request(app)
         .post('/auth/signup')
         .send({
-            email: 'collins@buupass.com', 
+            email: '', 
             password: 'collo@123',
         })
         .end((error, response) => {
